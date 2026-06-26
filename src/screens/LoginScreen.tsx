@@ -132,7 +132,7 @@ COUNTRY_CODES_SECTIONS.forEach(section => {
 
 export default function LoginScreen({ navigation }: any) {
   const [authMethod, setAuthMethod] = useState<'phone' | 'email'>('phone');
-  const [countryCode, setCountryCode] = useState('+971');
+  const [countryCode, setCountryCode] = useState('+91');
   const [mobileNo, setMobileNo] = useState('');
   const [email, setEmail] = useState('');
   const [codeModalVisible, setCodeModalVisible] = useState(false);

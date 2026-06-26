@@ -599,20 +599,20 @@ export default function ProfileBuilderScreen({ navigation, routeParams }: any) {
               
               <View style={styles.linkCaptionInputRow}>
                 <TextInput
-                  style={[styles.textInputStyle, { flex: 2, marginRight: 8, height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
+                  style={[styles.textInputStyle, { height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
                   placeholder="Image URL"
                   placeholderTextColor="#9aacac"
                   value={pictureUrlInput}
                   onChangeText={setPictureUrlInput}
                 />
                 <TextInput
-                  style={[styles.textInputStyle, { flex: 1.5, marginRight: 8, height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
+                  style={[styles.textInputStyle, { height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
                   placeholder="Caption"
                   placeholderTextColor="#9aacac"
                   value={pictureCaptionInput}
                   onChangeText={setPictureCaptionInput}
                 />
-                <TouchableOpacity style={styles.addMediaLinkBtn} onPress={addPictureCombo}>
+                <TouchableOpacity style={[styles.addMediaLinkBtn, { alignSelf: 'stretch' }]} onPress={addPictureCombo}>
                   <Text style={styles.addMediaLinkBtnText}>＋ Add</Text>
                 </TouchableOpacity>
               </View>
@@ -648,14 +648,14 @@ export default function ProfileBuilderScreen({ navigation, routeParams }: any) {
               <Text style={styles.fieldLabel}>Voice Introduction (Optional)</Text>
               <View style={styles.linkCaptionInputRow}>
                 <TextInput
-                  style={[styles.textInputStyle, { flex: 2, marginRight: 8, height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
+                  style={[styles.textInputStyle, { height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
                   placeholder="Audio Link URL"
                   placeholderTextColor="#9aacac"
                   value={voiceUrl}
                   onChangeText={setVoiceUrl}
                 />
                 <TextInput
-                  style={[styles.textInputStyle, { flex: 1.5, height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
+                  style={[styles.textInputStyle, { height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
                   placeholder="Caption"
                   placeholderTextColor="#9aacac"
                   value={voiceCaption}
@@ -669,14 +669,14 @@ export default function ProfileBuilderScreen({ navigation, routeParams }: any) {
               <Text style={styles.fieldLabel}>Presentation Video (Optional)</Text>
               <View style={styles.linkCaptionInputRow}>
                 <TextInput
-                  style={[styles.textInputStyle, { flex: 2, marginRight: 8, height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
+                  style={[styles.textInputStyle, { height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
                   placeholder="Video Link URL"
                   placeholderTextColor="#9aacac"
                   value={videoUrl}
                   onChangeText={setVideoUrl}
                 />
                 <TextInput
-                  style={[styles.textInputStyle, { flex: 1.5, height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
+                  style={[styles.textInputStyle, { height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
                   placeholder="Caption"
                   placeholderTextColor="#9aacac"
                   value={videoCaption}
@@ -702,20 +702,20 @@ export default function ProfileBuilderScreen({ navigation, routeParams }: any) {
               
               <View style={styles.linkCaptionInputRow}>
                 <TextInput
-                  style={[styles.textInputStyle, { flex: 2, marginRight: 8, height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
+                  style={[styles.textInputStyle, { height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
                   placeholder="Licence Image URL"
                   placeholderTextColor="#9aacac"
                   value={licenseUrlInput}
                   onChangeText={setLicenseUrlInput}
                 />
                 <TextInput
-                  style={[styles.textInputStyle, { flex: 1.5, marginRight: 8, height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
+                  style={[styles.textInputStyle, { height: 42, paddingHorizontal: 12, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 6, backgroundColor: '#ffffff' }]}
                   placeholder="Caption (e.g. State Licence)"
                   placeholderTextColor="#9aacac"
                   value={licenseCaptionInput}
                   onChangeText={setLicenseCaptionInput}
                 />
-                <TouchableOpacity style={styles.addMediaLinkBtn} onPress={addLicenseCombo}>
+                <TouchableOpacity style={[styles.addMediaLinkBtn, { alignSelf: 'stretch' }]} onPress={addLicenseCombo}>
                   <Text style={styles.addMediaLinkBtnText}>＋ Add</Text>
                 </TouchableOpacity>
               </View>
@@ -1548,8 +1548,7 @@ const styles = StyleSheet.create({
     lineHeight: 14,
   },
   linkCaptionInputRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: 'column',
     gap: 8,
     marginTop: 8,
   },
