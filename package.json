@@ -2,10 +2,14 @@
   "name": "doctor-app-frontend",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "build": "webpack --config web/webpack.config.js --mode production",
     "web:start": "webpack serve --config web/webpack.config.js --mode development",
     "web:build": "webpack --config web/webpack.config.js --mode production"
   },
